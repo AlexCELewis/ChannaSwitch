@@ -54,7 +54,7 @@ GM_addStyle(multilineStr(function() {
             border:                 0px outset black;
             margin:                 0px;
             opacity:                0.65;
-            z-index:                222;
+            z-index:                99999;
             padding:                0px 0px;
         }
         #myButton {
