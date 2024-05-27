@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name        ChannaSwitch
-// @version     1.0.0
+// @version     1.0.1
 // @namespace   https://AceLewis.com
 // @description Change from production, development, and staging easily.
-// @match     https://app.channable.com/*
-// @match     https://staging.channable.com/*
-// @match     http://localhost:4200/*
+// @match       https://app.channable.com/*
+// @match       https://staging.channable.com/*
+// @match       http://localhost:4200/*
 // @grant       GM_addStyle
 // @require     https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js
+// @updateURL   https://github.com/AlexCELewis/ChannaSwitch/raw/main/channaswitch.user.js
+// @downloadURL https://github.com/AlexCELewis/ChannaSwitch/raw/main/channaswitch.user.js
 // ==/UserScript==
 
 const prod_url = 'https://app.channable.com/'
