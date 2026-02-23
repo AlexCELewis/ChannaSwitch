@@ -24,7 +24,11 @@ const dev_button_html = '<button id="goToDev" type="button">D</button>'
 var buttonsHtml = document.createElement('div');
 buttonsHtml.innerHTML = prod_button_html + staging_button_html + dev_button_html;
 buttonsHtml.setAttribute('id', 'myContainer');
-document.body.appendChild(buttonsHtml);
+if (window.location.href.includes('http://localhost') && !window.location.href.startsWith(dev_url)) {
+    // The @match would imply we only get :4200 but actually it matches other ports too 
+} else {
+    document.body.appendChild(buttonsHtml);
+}
 
 // Allow buttons to be clicked and add callback function
 document.getElementById("goToProd").addEventListener("click", GotToProd, false);
